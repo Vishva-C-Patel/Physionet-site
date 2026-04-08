@@ -1,0 +1,436 @@
+:root {
+  --blue:#2563eb;
+  --cyan:#06b6d4;
+  --text:#0f172a;
+  --muted:#64748b;
+  --bg:#f8fafc;
+}
+
+/* BASE */
+body {
+  margin:0;
+  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+
+/* NAVBAR */
+header {
+  position:sticky;
+  top:0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 80px;
+  background:rgba(255,255,255,0.7);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(0,0,0,0.05);
+  z-index:100;
+}
+
+.logo {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:600;
+  font-size:18px;
+}
+
+.logo img {
+  width:32px;
+  border-radius:8px;
+}
+
+.nav a {
+  margin-left:32px;
+  text-decoration:none;
+  color:var(--muted);
+  font-weight:500;
+  transition:0.2s;
+}
+
+.nav a:hover {
+  color:var(--blue);
+}
+
+/* HERO */
+.hero {
+  padding:140px 80px;
+  background:linear-gradient(135deg,#2563eb,#06b6d4);
+  color:white;
+  border-bottom-left-radius:50px;
+  border-bottom-right-radius:50px;
+}
+
+.hero h1 {
+  font-size:64px;
+  line-height:1.1;
+  letter-spacing:-1px;
+}
+
+.hero p {
+  margin-top:20px;
+  max-width:600px;
+  font-size:18px;
+  opacity:0.9;
+}
+
+/* SECTION */
+.section {
+  padding:120px 80px;
+}
+
+/* FEATURE BLOCK */
+.feature-block {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:100px;
+  align-items:center;
+  margin-bottom:140px;
+}
+
+.feature-text h2 {
+  font-size:36px;
+}
+
+.feature-text p {
+  color:var(--muted);
+  line-height:1.8;
+  font-size:16px;
+  max-width:500px;
+}
+
+.feature-text ul {
+  margin-top:18px;
+  padding-left:18px;
+}
+
+.feature-text li {
+  margin-bottom:10px;
+  color:#334155;
+}
+
+/* IMAGE */
+.feature-img img {
+  width:100%;
+  border-radius:26px;
+  box-shadow:0 30px 80px rgba(0,0,0,0.15);
+  transition:0.3s;
+}
+
+.feature-img img:hover {
+  transform:scale(1.03);
+}
+
+/* 🔥 ABOUT CARD (CENTERED + BLUE HERO STYLE) */
+.about-box {
+  max-width:1100px;
+  margin:0 auto 120px;
+  padding:90px 60px;
+  border-radius:36px;
+
+  background:linear-gradient(135deg,#2563eb,#06b6d4);
+  color:white;
+
+  text-align:center;
+
+  box-shadow:0 40px 120px rgba(37,99,235,0.35);
+  transition:0.3s;
+}
+
+.about-box:hover {
+  transform:translateY(-6px);
+}
+
+.about-box h2 {
+  font-size:48px;
+  margin-bottom:20px;
+  letter-spacing:-0.5px;
+}
+
+.about-box p {
+  font-size:18px;
+  line-height:1.8;
+  opacity:0.95;
+  max-width:700px;
+  margin:0 auto;
+}
+
+.about-box p + p {
+  margin-top:14px;
+}
+
+/* SECTION TITLE */
+.section-title {
+  font-size:34px;
+  margin:120px 0 60px;
+  text-align:left;
+}
+
+/* TEAM GRID */
+.team {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:40px;
+}
+
+/* MEMBER CARD */
+.member {
+  background:white;
+  padding:35px;
+  border-radius:24px;
+  text-align:center;
+  transition:0.3s;
+  border:1px solid #e5e7eb;
+}
+
+.member:hover {
+  transform:translateY(-10px);
+  box-shadow:0 25px 70px rgba(0,0,0,0.08);
+}
+
+/* IMAGE */
+.member img {
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:18px;
+}
+
+/* NAME */
+.member h4 {
+  margin:10px 0 6px;
+  font-size:18px;
+}
+
+/* ROLE */
+.member span {
+  font-size:13px;
+  color:var(--blue);
+  font-weight:500;
+}
+
+/* DESC */
+.member p {
+  font-size:14px;
+  color:var(--muted);
+  margin-top:10px;
+  line-height:1.6;
+}
+
+/* LINK */
+.member a {
+  display:inline-block;
+  margin-top:14px;
+  font-size:14px;
+  color:var(--blue);
+  text-decoration:none;
+  font-weight:500;
+}
+
+.member a:hover {
+  text-decoration:underline;
+}
+
+/* 🔥 iOS SECTION (MATCHED + CENTERED + DARK PREMIUM) */
+.ios-box {
+  max-width:1100px;
+  margin:140px auto 0;
+  padding:90px 60px;
+  border-radius:36px;
+
+  background:linear-gradient(135deg,#0f172a,#2563eb);
+  color:white;
+
+  text-align:center;
+
+  box-shadow:0 40px 120px rgba(0,0,0,0.35);
+  transition:0.3s;
+}
+
+.ios-box:hover {
+  transform:translateY(-6px);
+}
+
+.ios-box h2 {
+  font-size:42px;
+  margin-bottom:20px;
+}
+
+.ios-box p {
+  font-size:17px;
+  line-height:1.8;
+  opacity:0.9;
+  max-width:700px;
+  margin:0 auto;
+}
+
+.ios-box p + p {
+  margin-top:12px;
+}
+
+/* LEGAL */
+.legal-box {
+  margin-bottom:40px;
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.legal-box h2 {
+  font-size:22px;
+}
+
+.legal-box p {
+  color:var(--muted);
+  line-height:1.8;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px) {
+
+  header {
+    padding:15px 20px;
+  }
+
+  .section {
+    padding:70px 20px;
+  }
+
+  .hero {
+    padding:100px 20px;
+  }
+
+  .hero h1 {
+    font-size:42px;
+  }
+
+  .feature-block {
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  .about-box,
+  .ios-box {
+    padding:50px 25px;
+  }
+
+  .about-box h2,
+  .ios-box h2 {
+    font-size:32px;
+  }
+}
+
+/* 🔥 LEGAL PAGE (APPLE STYLE CLEAN) */
+.legal-card {
+  max-width:900px;
+  margin:0 auto 60px;
+  padding:50px 60px;
+
+  background:white;
+  border-radius:28px;
+
+  box-shadow:0 20px 60px rgba(0,0,0,0.06);
+}
+
+/* TITLE */
+.legal-card h1 {
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+/* SUBTEXT */
+.legal-sub {
+  color:var(--muted);
+  margin-bottom:30px;
+  font-size:14px;
+}
+
+/* SECTION HEADINGS */
+.legal-card h3 {
+  margin-top:28px;
+  font-size:18px;
+}
+
+/* PARAGRAPH */
+.legal-card p {
+  color:var(--muted);
+  line-height:1.8;
+  margin-top:6px;
+}
+
+/* LEGAL LIST */
+.legal-card ul {
+  margin-top:10px;
+  padding-left:20px;
+}
+
+.legal-card li {
+  margin-bottom:8px;
+  color:var(--muted);
+}
+
+/* 🔥 CONTACT CARD (CLEAN SINGLE ITEM) */
+.contact-card {
+  max-width:1000px;
+  margin:100px auto 0;
+  padding:70px 60px;
+
+  border-radius:36px;
+
+  background:linear-gradient(135deg,#2563eb,#06b6d4);
+  color:white;
+
+  text-align:center;
+
+  box-shadow:0 30px 90px rgba(37,99,235,0.35);
+}
+
+.contact-card h2 {
+  font-size:36px;
+  margin-bottom:12px;
+}
+
+.contact-card p {
+  opacity:0.9;
+  margin-bottom:30px;
+  font-size:16px;
+}
+
+/* EMAIL BLOCK */
+.contact-email span {
+  font-size:14px;
+  opacity:0.8;
+}
+
+.contact-email p {
+  margin-top:8px;
+  font-size:22px;
+  font-weight:600;
+  letter-spacing:0.3px;
+}
+
+/* GRID */
+.contact-grid {
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  margin-top:20px;
+}
+
+.contact-grid div {
+  flex:1;
+}
+
+.contact-grid span {
+  font-size:13px;
+  opacity:0.8;
+}
+
+.contact-grid p {
+  margin-top:5px;
+  font-weight:600;
+}
